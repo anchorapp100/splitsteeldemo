@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPLITSTEEL — the demo</title>
+<meta name="description" content="The whole SPLITSTEEL sitting, screen for screen, replayed from the real wizard: power on, a brand new seed, the pad and the ciphertext, the checks, the sticks, recovery, and how the halves are placed for your heirs.">
+<meta property="og:title" content="SPLITSTEEL — the demo">
+<meta property="og:description" content="Every screen you will see, before you see it. Replayed from the real program, not drawn.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preload" href="fonts/SpaceGrotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/IBMPlexMono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/BoxDrawing.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="quickstart.css">
+<noscript><style>.rev{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Sections">
+  <a class="wordmark" href="#top">SPLIT<span>STEEL</span></a>
+  <div class="nav-links">
+    <a href="#what">What this is</a>
+    <a href="#box">Before you sit</a>
+    <a href="#screens">The screens</a>
+    <a href="#objects">The objects</a>
+    <a href="#inherit">Inheritance</a>
+    <a href="#why">Why a split</a>
+    <a href="#heirs">Heirs</a>
+  </div>
+</nav>
+
+<header class="hero qs-hero" id="top">
+  <img class="hero-img" src="images/hero.jpg" alt="" aria-hidden="true">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="kicker">A public demo · the whole sitting, screen for screen</p>
+    <h1>Every screen you will see, before you see it.</h1>
+    <p class="hero-sub">
+      The wizard below is not drawn, it is replayed. A script drives the real program, build
+      <span class="mono" data-build>…</span>, through a complete sitting and records what it puts on the
+      console, colours included. Then the objects it leaves behind, and how the halves are placed so your
+      heirs can find them and a thief cannot.
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn-amber" href="#screens">Watch the sitting</a>
+    </div>
+    <p class="qs-stamp mono">every frame generated from the real program · demonstration values, not a real wallet</p>
+  </div>
+  <p class="hero-badge" aria-label="Privacy statement">no cookies · no analytics · no requests leave this page</p>
+</header>
+
+
+<!-- ============================================================ 0 · what this is -->
+<section class="qs rev" id="what">
+  <div class="wrap">
+    <p class="kicker">00 · what this is</p>
+    <h2>A seed backup that is worthless in any one place.</h2>
+    <p class="lead">
+      SPLITSTEEL takes the twelve or twenty-four words of a wallet and turns them into two random-looking halves,
+      the <span class="pad">pad</span> and the <span class="cipher">ciphertext</span>. Either half on its own carries no
+      information about the seed at all, not to a thief and not to a computer of any size. Both together give the
+      words back with a pencil and a printed table. <strong>The sitting that makes them happens on a small computer
+      that has never been online and forgets everything when the power goes off</strong>, and this page replays
+      that sitting exactly as the machine shows it.
+    </p>
+    <p class="lead">
+      This is a demonstration for feedback. The values on every screen are published test values. Nothing here asks
+      for a seed, and nothing here ever should.
+    </p>
+  </div>
+</section>
+<!-- ============================================================ 1 · before you sit -->
+<section class="qs rev" id="box">
+  <div class="wrap">
+    <p class="kicker">01 · before you sit down</p>
+    <h2>A small computer, a screen, a keyboard, two dice.</h2>
+    <p class="lead">
+      The blender is a Raspberry Pi with the SPLITSTEEL card in it. It has no Wi-Fi hardware and no network lead,
+      nothing typed into it is ever written to the card, and when the power goes off everything it knew is gone.
+      <strong>Everything else on the table is paper, dice and steel.</strong>
+    </p>
+
+    <div class="qs-grid">
+      <div class="qs-card">
+        <h3>On the table</h3>
+        <ul>
+          <li><strong>The Pi</strong> with the SPLITSTEEL card, and its power supply</li>
+          <li><strong>Any HDMI screen</strong> and a USB keyboard</li>
+          <li><strong>Two casino dice</strong>, two colours, so first and second stay distinct</li>
+          <li><strong>Two USB sticks</strong>, any size; they become <span class="pad">R</span> and <span class="cipher">B</span></li>
+          <li><strong>The three printed cards</strong>: dice card, ARITHMETIC CARD, SEED GRID CARD</li>
+          <li>Pencil and paper</li>
+        </ul>
+      </div>
+      <div class="qs-card">
+        <h3>Not in the room</h3>
+        <ul>
+          <li>No network lead and no Wi-Fi hardware on the machine</li>
+          <li>No phone on the table</li>
+          <li>No camera that can see the screen</li>
+          <li>Nobody who does not need to be there</li>
+        </ul>
+        <p>The wizard asks you to confirm this before it does anything, and it means it.</p>
+      </div>
+      <div class="qs-card">
+        <h3>For afterwards</h3>
+        <ul>
+          <li><strong>Steel plates</strong>, the punch jig and letter punches, or an engraver</li>
+          <li><strong>Two M-DISCs</strong> and a drive that burns them</li>
+          <li><strong>Two ordinary computers</strong>, one for each half, never both halves on one</li>
+          <li>Two hiding places in two buildings</li>
+        </ul>
+      </div>
+      <div class="qs-card">
+        <h3>The rules</h3>
+        <ul>
+          <li><strong>Practice first.</strong> <span class="mono">[3]</span> at the menu is the whole sitting with toy values.</li>
+          <li><strong>Either half alone is nothing.</strong> Both halves together are the key.</li>
+          <li><strong>The two halves never meet</strong> on one computer or in one hiding place.</li>
+          <li><strong>Power off with [p]</strong>, never by pulling the plug.</li>
+          <li><strong>Never type a seed into a website.</strong> Not this one, not any.</li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 900 440" role="img" aria-label="The blender on a table: a Raspberry Pi joined to a screen by HDMI and to a keyboard by USB, two USB sticks marked R and B, two dice, the three printed cards, pencil and paper, and a crossed-out Wi-Fi, network lead, phone and camera.">
+        <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor"/></marker></defs>
+        <rect class="face" x="250" y="16" width="400" height="250" rx="6"/>
+        <rect class="face-dark" x="264" y="30" width="372" height="212" rx="2"/>
+        <text class="mono-t sm" x="276" y="50">SPLITSTEEL  ·  the Pi is a blender  ·  steel is the vault</text>
+        <line class="ink-soft" x1="276" y1="57" x2="624" y2="57"/>
+        <text class="mono-amber sm" x="276" y="75">MAIN MENU</text>
+        <text class="mono-green sm" x="276" y="96">   [1] build a vault        words -&gt; pad + ciphertext</text>
+        <text class="mono-green sm" x="276" y="110">   [2] recover              pad + ciphertext -&gt; words</text>
+        <text class="mono-green sm" x="276" y="124">   [3] practice             the whole sitting, toy values</text>
+        <text class="mono-green sm" x="276" y="138">   [?] help                 new to this? start here</text>
+        <text class="mono-green sm" x="276" y="152">   [p] power off            the safe way to finish</text>
+        <text class="mono-dim sm" x="276" y="172">   First time with this kit? Do [3] practice before anything real.</text>
+        <text class="mono-amber sm" x="276" y="194">choose: <tspan class="pulse">▌</tspan></text>
+        <rect class="ink" x="430" y="266" width="40" height="16"/>
+        <rect class="ink" x="392" y="282" width="116" height="6"/>
+        <text class="txt-s" x="450" y="306" text-anchor="middle">any HDMI screen or TV</text>
+        <rect class="pcb" x="70" y="250" width="190" height="120" rx="7"/>
+        <circle class="hole" cx="79" cy="259" r="3.5"/>
+        <circle class="hole" cx="251" cy="259" r="3.5"/>
+        <circle class="hole" cx="79" cy="361" r="3.5"/>
+        <circle class="hole" cx="251" cy="361" r="3.5"/>
+        <rect class="pin" x="92" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="98.6" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="105.2" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="111.8" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="118.4" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="125" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="131.6" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="138.2" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="144.8" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="151.4" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="158" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="164.6" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="171.2" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="177.8" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="184.4" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="191" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="197.6" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="204.2" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="210.8" y="255" width="4" height="4" rx="1.5"/><rect class="pin" x="217.4" y="255" width="4" height="4" rx="1.5"/>
+        <rect class="pin" x="92" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="98.6" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="105.2" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="111.8" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="118.4" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="125" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="131.6" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="138.2" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="144.8" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="151.4" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="158" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="164.6" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="171.2" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="177.8" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="184.4" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="191" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="197.6" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="204.2" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="210.8" y="261" width="4" height="4" rx="1.5"/><rect class="pin" x="217.4" y="261" width="4" height="4" rx="1.5"/>
+        <rect class="chip" x="130" y="294" width="34" height="34" rx="2"/>
+        <rect class="chip" x="188" y="302" width="18" height="18" rx="2"/>
+        <rect class="chip sm" x="100" y="310" width="10" height="14" rx="1"/>
+        <rect class="chip sm" x="100" y="334" width="14" height="8" rx="1"/>
+        <rect class="port" x="246" y="272" width="26" height="22" rx="2"/>
+        <rect class="port" x="246" y="304" width="26" height="22" rx="2"/>
+        <text class="txt-s" x="216" y="296">USB</text>
+        <rect class="port" x="198" y="244" width="36" height="12" rx="2"/>
+        <text class="txt-s" x="202" y="270">HDMI</text>
+        <rect class="port" x="64" y="338" width="22" height="16" rx="2"/>
+        <rect class="padfill" x="40" y="341" width="26" height="10" rx="2"/>
+        <text class="txt-s" x="40" y="392">SPLITSTEEL card</text>
+        <text class="txt" x="260" y="392" text-anchor="end">Raspberry Pi</text>
+        <path class="arrow" d="M216 244 C 216 210, 300 250, 300 242" />
+        <text class="txt-s" x="228" y="222">HDMI</text>
+        <path class="arrow" d="M300 370 L 278 370 L 278 315 L 274 315"/>
+        <text class="txt-s" x="284" y="362">USB</text>
+        <rect class="face" x="300" y="330" width="340" height="84" rx="5"/>
+        <rect class="ink-soft" x="310" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="333" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="356" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="379" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="402" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="425" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="448" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="471" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="494" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="517" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="540" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="563" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="586" y="338" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="609" y="338" width="20" height="12" rx="1.5"/>
+        <rect class="ink-soft" x="318" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="341" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="364" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="387" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="410" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="433" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="456" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="479" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="502" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="525" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="548" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="571" y="354" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="594" y="354" width="20" height="12" rx="1.5"/>
+        <rect class="ink-soft" x="324" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="347" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="370" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="393" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="416" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="439" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="462" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="485" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="508" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="531" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="554" y="370" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="577" y="370" width="20" height="12" rx="1.5"/>
+        <rect class="ink-soft" x="310" y="386" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="333" y="386" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="356" y="386" width="20" height="12" rx="1.5"/>
+        <rect class="ink-soft" x="382" y="386" width="160" height="12" rx="1.5"/>
+        <rect class="ink-soft" x="550" y="386" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="573" y="386" width="20" height="12" rx="1.5"/><rect class="ink-soft" x="596" y="386" width="20" height="12" rx="1.5"/>
+        <text class="txt-s" x="470" y="434" text-anchor="middle">a USB keyboard</text>
+        <rect class="padline" x="60" y="150" width="52" height="18" rx="3"/><rect class="padfill" x="112" y="154" width="10" height="10"/>
+        <text class="mono-t" x="70" y="163" fill="currentColor">stick R</text>
+        <rect class="cipherline" x="60" y="178" width="52" height="18" rx="3"/><rect class="cipherfill" x="112" y="182" width="10" height="10"/>
+        <text class="mono-t" x="70" y="191" fill="currentColor">stick B</text>
+        <text class="txt-s" x="134" y="163">counted at the start, written one</text>
+        <text class="txt-s" x="134" y="177">at a time, never both in together</text>
+        <rect class="face" x="700" y="30" width="130" height="48" rx="3"/><text class="mono-t" x="710" y="47">DICE CARD</text>
+        <rect class="face" x="712" y="52" width="130" height="48" rx="3"/><text class="mono-t" x="722" y="69">ARITHMETIC CARD</text>
+        <rect class="face" x="724" y="74" width="130" height="48" rx="3"/><text class="mono-t" x="734" y="91">SEED GRID CARD</text>
+        <rect class="ink-soft" x="734" y="98" width="15" height="11" rx="1.5"/><rect class="ink-soft" x="752" y="98" width="15" height="11" rx="1.5"/><rect class="ink-soft" x="770" y="98" width="15" height="11" rx="1.5"/><rect class="ink-soft" x="788" y="98" width="15" height="11" rx="1.5"/>
+        <text class="txt-s" x="789" y="142" text-anchor="middle">the three printed cards</text>
+        <line class="ink" x1="710" y1="228" x2="830" y2="196"/><line class="ink" x1="712" y1="234" x2="832" y2="202"/>
+        <polygon points="705,226 708,237 698,235" fill="currentColor"/>
+        <text class="txt-s" x="772" y="256" text-anchor="middle">pencil and paper</text>
+        <rect class="face" x="732" y="290" width="28" height="28" rx="4"/>
+        <circle cx="739" cy="297" r="2.2" fill="currentColor"/>
+        <circle cx="753" cy="297" r="2.2" fill="currentColor"/>
+        <circle cx="746" cy="304" r="2.2" fill="currentColor"/>
+        <circle cx="739" cy="311" r="2.2" fill="currentColor"/>
+        <circle cx="753" cy="311" r="2.2" fill="currentColor"/>
+        <rect class="face" x="770" y="290" width="28" height="28" rx="4"/>
+        <circle cx="777" cy="297" r="2.2" fill="currentColor"/>
+        <circle cx="791" cy="311" r="2.2" fill="currentColor"/>
+        <text class="txt-s" x="765" y="338" text-anchor="middle">two dice, two colours</text>
+        <text class="txt" x="44" y="40">Wi-Fi</text>
+        <text class="txt" x="44" y="62">network lead</text>
+        <text class="txt" x="44" y="84">phone</text>
+        <text class="txt" x="44" y="106">camera</text>
+        <line class="badline" x1="34" y1="26" x2="150" y2="114"/><line class="badline" x1="150" y1="26" x2="34" y2="114"/>
+        <text class="txt-s" x="44" y="132">nothing in the room talks to anything</text>
+        </svg>
+      <figcaption>The whole set-up. The Pi drives the screen over HDMI and takes a keyboard over USB. The two sticks are
+        counted at the start and written one at a time, so both halves can never land on the same one. Wi-Fi, a network
+        lead, a phone and a camera are the four things that must not be in the room.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ 2 · the screens -->
+<section class="qs rev" id="screens">
+  <div class="wrap">
+    <p class="kicker">02 · the sitting, screen for screen</p>
+    <h2>The wizard, replayed from the program itself.</h2>
+    <p class="lead">
+      Eight episodes. Pick one, or let it run: it plays the whole sitting in order, typing what you would type, and the
+      panel beside the screen fills in the cards and paper on the table as the screens ask for them.
+      <strong>Every frame is the wizard's own output</strong>, captured by driving build
+      <span class="mono" data-build>…</span> with a fixed script; the page cannot drift from the code because the
+      test suite regenerates it and compares.
+    </p>
+
+    <div class="chapters-strip" id="chapters" aria-label="Episodes"></div>
+    <div class="stage">
+      <div>
+        <div class="screen">
+          <div class="screen-bar">
+            <span>the kit's console · 80 columns · Linux console colours</span>
+            <span class="mono">wizard build <span data-build>…</span></span>
+          </div>
+          <pre class="term" id="term" aria-label="The wizard's screen">This replay needs JavaScript.</pre>
+        </div>
+        <div class="controls">
+          <button class="btn btn-amber" id="play" type="button" aria-pressed="false">Play</button>
+          <button class="btn btn-ghost" id="prev" type="button">← Back</button>
+          <button class="btn btn-ghost" id="next" type="button">Next →</button>
+          <label class="dim" for="speed">speed</label>
+          <select id="speed" aria-label="Playback speed">
+            <option value="0.25">¼× slowest</option>
+            <option value="0.5">½× slow</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option>
+            <option value="4">4×</option>
+          </select>
+          <input type="range" id="prog" min="0" max="1" value="0" aria-label="Screen within the episode">
+          <span class="counter mono" id="counter">1 / 1</span>
+        </div>
+        <p class="keys mono" id="keys"></p>
+        <div class="cap-box">
+          <p class="ep" id="ep-title"></p>
+          <p class="blurb" id="ep-blurb"></p>
+          <p class="cap" id="cap"></p>
+        </div>
+        <p class="hint">Space plays and pauses; the arrow keys step one screen. Too quick? Choose ½× or ¼×; the
+          screen also waits longer whenever there is a new caption to read. The seed in this replay is a published
+          demonstration value: <span class="mono" data-values="words">…</span>. It must never hold money.</p>
+        <details class="videos">
+          <summary>Prefer a video file? Each episode is also an MP4, rendered from the same frames.</summary>
+          <ul>
+            <li><a href="video/quickstart-01-power-on.mp4">01 · Power on</a></li>
+            <li><a href="video/quickstart-02-new-seed.mp4">02 · A brand new seed</a></li>
+            <li><a href="video/quickstart-03-pad-cipher.mp4">03 · The pad and the ciphertext</a></li>
+            <li><a href="video/quickstart-04-checks.mp4">04 · The checks</a></li>
+            <li><a href="video/quickstart-05-sticks.mp4">05 · The sticks</a></li>
+            <li><a href="video/quickstart-06-power-off.mp4">06 · Power off</a></li>
+            <li><a href="video/quickstart-07-recover.mp4">07 · Recover</a></li>
+            <li><a href="video/quickstart-08-help.mp4">08 · Help for heirs</a></li>
+          </ul>
+        </details>
+      </div>
+      <aside class="cards" aria-label="The cards and paper on the table">
+        <div class="tabs" id="tabs"></div>
+        <div class="card-view" id="cardview"></div>
+        <p class="cards-note" id="cardnote"></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ 3 · the objects -->
+<section class="qs rev" id="objects">
+  <div class="wrap">
+    <p class="kicker">03 · after the sitting</p>
+    <h2>Two sticks, two numbers on paper. From here on, one half at a time.</h2>
+    <p class="lead">
+      The blender is the only machine that ever holds your whole seed. Everything after it handles one half,
+      and a half is a random number, so the computers that make the copies need no trust and no skill.
+      <strong>One rule replaces all of that: the two halves never meet on the same computer.</strong>
+    </p>
+
+    <div class="qs-grid">
+      <div class="qs-card">
+        <h3><span class="pad">R</span> and <span class="cipher">B</span>, the sticks</h3>
+        <p>Each stick carries one half, its plate files and the recovery tools, and a page called
+          <strong>START-HERE.html</strong> that opens with a double-click and walks that half through to finished:
+          the disc, the plate, and where to put it. Take <span class="pad">R</span> to one computer and
+          <span class="cipher">B</span> to a different one.</p>
+      </div>
+      <div class="qs-card">
+        <h3>The discs</h3>
+        <p>One M-DISC per half, burned on that half's computer from the files on its stick. A disc is the copy that
+          survives being forgotten in a drawer for decades; the stick is the copy that is convenient this year.</p>
+      </div>
+      <div class="qs-card">
+        <h3>The steel</h3>
+        <p>A keeper plate and a spare for each half, punched with the jig from the plate files, eight groups and the
+          check group. <strong>No labels, ever.</strong> The plates carry no red or blue and no name: the arithmetic
+          does not care which is which.</p>
+      </div>
+      <div class="qs-card">
+        <h3>Then prove it, then split it</h3>
+        <ul>
+          <li>Run <strong>RECOVER</strong> on the kit reading only off the finished objects</li>
+          <li>Only then destroy the old paper seed</li>
+          <li>Two halves, three copies each, and <strong>no hiding place holds both halves</strong></li>
+          <li>Wipe the SD card, power off, post the heirs' letter</li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 820 250" role="img" aria-label="The two-machine rule: stick R goes to one computer and becomes a red disc and a plate; stick B goes to a different computer and becomes a blue disc and a plate; a barred line between the two computers says they never meet.">
+        <defs><marker id="arrow-pad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="padfill"/></marker><marker id="arrow-cipher" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="cipherfill"/></marker></defs>
+        <rect class="face" x="20" y="90" width="120" height="70" rx="5"/>
+        <text class="txt" x="80" y="119" text-anchor="middle">the blender</text>
+        <text class="txt-s" x="80" y="136" text-anchor="middle">saw both halves once</text>
+        <text class="txt-s" x="80" y="150" text-anchor="middle">and is powered off</text>
+        <path class="arrow-pad travel" d="M140 108 L 236 60"/><path class="arrow-cipher travel" d="M140 142 L 236 190"/>
+        <rect class="padline" x="176" y="66" width="44" height="14" rx="3"/><text class="mono-t" x="184" y="77">R</text>
+        <rect class="cipherline" x="176" y="170" width="44" height="14" rx="3"/><text class="mono-t" x="184" y="181">B</text>
+        <rect class="face" x="240" y="26" width="176" height="68" rx="5"/>
+        <text class="txt" x="328" y="54" text-anchor="middle">computer one</text>
+        <text class="txt-s" x="328" y="72" text-anchor="middle">any laptop, START-HERE.html</text>
+        <rect class="face" x="240" y="156" width="176" height="68" rx="5"/>
+        <text class="txt" x="328" y="184" text-anchor="middle">computer two</text>
+        <text class="txt-s" x="328" y="202" text-anchor="middle">another room, another building</text>
+        <line class="badline dash" x1="328" y1="98" x2="328" y2="152"/>
+        <line class="badline" x1="315" y1="118" x2="341" y2="132"/><line class="badline" x1="341" y1="118" x2="315" y2="132"/>
+        <text class="txt-s" x="350" y="129">never the same machine</text>
+        <path class="arrow-pad" d="M416 60 L 464 60"/>
+        <circle class="padline" cx="494" cy="60" r="22"/><circle class="ink-soft" cx="494" cy="60" r="7"/>
+        <text class="txt-s" x="494" y="96" text-anchor="middle">M-DISC</text>
+        <path class="arrow-pad" d="M516 60 L 552 60"/>
+        <rect class="steel" x="556" y="40" width="134" height="40" rx="3"/>
+        <text class="mono-t" x="623" y="57" text-anchor="middle">2D94 081F 5E1C 0473</text>
+        <text class="mono-t" x="623" y="70" text-anchor="middle">B9A2 E8D1 370F 6A5C</text>
+        <text class="txt-s" x="623" y="96" text-anchor="middle">keeper plate + spare</text>
+        <text class="txt-s" x="706" y="57">no label</text><text class="txt-s" x="706" y="71">no colour</text>
+        <path class="arrow-cipher" d="M416 190 L 464 190"/>
+        <circle class="cipherline" cx="494" cy="190" r="22"/><circle class="ink-soft" cx="494" cy="190" r="7"/>
+        <text class="txt-s" x="494" y="226" text-anchor="middle">M-DISC</text>
+        <path class="arrow-cipher" d="M516 190 L 552 190"/>
+        <rect class="steel" x="556" y="170" width="134" height="40" rx="3"/>
+        <text class="mono-t" x="623" y="187" text-anchor="middle">1E46 A0B0 D90D 19B7</text>
+        <text class="mono-t" x="623" y="200" text-anchor="middle">E1A8 E74F EE1E 68ED</text>
+        <text class="txt-s" x="623" y="226" text-anchor="middle">keeper plate + spare</text>
+        <text class="txt-s" x="706" y="187">no label</text><text class="txt-s" x="706" y="201">no colour</text>
+        </svg>
+      <figcaption>The two-machine rule. Each stick goes to its own ordinary computer and becomes a disc and a plate there.
+        Neither computer ever holds both halves, so neither needs to be trusted. The plate values are the
+        demonstration pad and ciphertext from the replay above.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ 4 · inheritance -->
+<section class="qs rev" id="inherit">
+  <div class="wrap">
+    <p class="kicker">04 · inheritance</p>
+    <h2>Split the secret, not the trust.</h2>
+    <p class="lead">
+      Copies of the same half never add up. Twenty people holding twenty copies of the ciphertext hold nothing
+      between them, which is what makes a split different from a multisig: nobody you give a half to can ever
+      spend, alone or together. <strong>The whole design of the inheritance is deciding who could hold one half
+      and also reach the other.</strong>
+    </p>
+
+    <div class="qs-grid">
+      <div class="qs-card">
+        <h3>Many <span class="cipher">ciphers</span></h3>
+        <p>Spread the ciphertext as widely as is useful: a solicitor, a family member, a hole in the garden, even a
+          dead man's switch in an online account. A hacked account learns a random string and nothing else.</p>
+      </div>
+      <div class="qs-card">
+        <h3>Few <span class="pad">pads</span></h3>
+        <p>Keep the pad copies few, in places only you control, never online, never with anyone who holds a
+          cipher. Once a thief has a pad, every cipher copy in the world is a place they can finish the job.</p>
+      </div>
+      <div class="qs-card">
+        <h3>The one rule</h3>
+        <p><strong>No person, account or place ever holds one half and the whereabouts of the other.</strong> A
+          solicitor with a cipher and a sealed letter saying where a pad is holds the whole secret.</p>
+      </div>
+      <div class="qs-card">
+        <h3>The after-death path takes two</h3>
+        <p>The will names where the pad is, and the person who holds the will holds no cipher. A cipher sits with
+          someone who does not know where the pad is. Either alone has nothing. Together, after you, they recover it.</p>
+      </div>
+    </div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 840 340" role="img" aria-label="An inheritance layout: the owner keeps three pad copies in places only they control; cipher copies go to a solicitor, a family member, a hole in the garden and an online account; the will with the pad's location goes to a person who holds no cipher; after the owner's death two people who each hold something worthless alone recover the words together.">
+        <rect class="face" x="24" y="110" width="150" height="110" rx="6"/>
+        <text class="txt" x="99" y="136" text-anchor="middle">you</text>
+        <rect class="steel" x="42" y="150" width="40" height="16" rx="2"/><rect class="steel" x="78" y="172" width="40" height="16" rx="2"/><rect class="steel" x="114" y="150" width="40" height="16" rx="2"/>
+        <text class="txt-s" x="99" y="240" text-anchor="middle"><tspan class="padfill">three pads</tspan>, three places you control</text>
+        <text class="txt-s" x="99" y="254" text-anchor="middle">never online, never with</text>
+        <text class="txt-s" x="99" y="268" text-anchor="middle">a cipher holder</text>
+        <rect class="face" x="320" y="20" width="210" height="46" rx="5"/>
+        <text class="txt" x="425" y="40" text-anchor="middle">solicitor</text>
+        <text class="txt-s" x="425" y="56" text-anchor="middle">holds the will · holds no cipher</text>
+        <rect class="face" x="320" y="96" width="210" height="46" rx="5"/>
+        <text class="txt" x="425" y="116" text-anchor="middle">family member</text>
+        <text class="txt-s" x="425" y="132" text-anchor="middle">a cipher · not told where the pad is</text>
+        <rect class="face" x="320" y="172" width="210" height="46" rx="5"/>
+        <text class="txt" x="425" y="192" text-anchor="middle">a hole in the garden</text>
+        <text class="txt-s" x="425" y="208" text-anchor="middle">a cipher · a place only you know</text>
+        <rect class="face" x="320" y="248" width="210" height="46" rx="5"/>
+        <text class="txt" x="425" y="268" text-anchor="middle">an online account</text>
+        <text class="txt-s" x="425" y="284" text-anchor="middle">a cipher · worthless if hacked</text>
+        <path class="arrow" d="M174 140 C 250 140, 250 43, 320 43"/>
+        <text class="txt-s" x="186" y="70">the will: where the pads are</text>
+        <path class="arrow-cipher" d="M174 155 C 250 155, 250 119, 320 119"/>
+        <path class="arrow-cipher" d="M174 170 C 250 170, 250 195, 320 195"/>
+        <path class="arrow-cipher" d="M174 185 C 250 185, 250 271, 320 271"/>
+        <text class="txt-s cipherfill" x="196" y="232">a cipher copy each</text>
+        <line class="badline dash" x1="530" y1="43" x2="566" y2="43"/><line class="badline dash" x1="566" y1="43" x2="566" y2="119"/><line class="badline dash" x1="566" y1="119" x2="530" y2="119"/>
+        <line class="badline" x1="558" y1="73" x2="574" y2="89"/><line class="badline" x1="574" y1="73" x2="558" y2="89"/>
+        <text class="txt-s" x="580" y="85">never the same person</text>
+        <rect class="face" x="620" y="126" width="200" height="104" rx="6"/>
+        <text class="txt" x="720" y="150" text-anchor="middle">after you</text>
+        <text class="txt-s" x="720" y="168" text-anchor="middle">the will says where a pad is</text>
+        <text class="txt-s" x="720" y="182" text-anchor="middle">+ any one cipher copy</text>
+        <text class="txt-s" x="720" y="196" text-anchor="middle">+ the ARITHMETIC CARD</text>
+        <text class="txt okfill" x="720" y="216" text-anchor="middle">= the words, on a blender</text>
+        <path class="arrow" d="M530 50 C 580 50, 580 150, 620 150"/>
+        <path class="arrow-cipher" d="M530 126 C 580 126, 580 184, 620 184"/>
+        <text class="txt-s" x="720" y="256" text-anchor="middle">two people, each holding</text>
+        <text class="txt-s" x="720" y="270" text-anchor="middle">something worthless alone</text>
+        </svg>
+      <figcaption>One layout that satisfies the rule. Cipher copies are spread, because they are worthless alone. The pads
+        stay with you. The will says where a pad is, and the person who holds the will holds no cipher, so the
+        after-death path needs two people and no single one of them can rob you while you are alive.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ 5 · why a split -->
+<section class="qs rev" id="why">
+  <div class="wrap">
+    <p class="kicker">05 · why a split</p>
+    <h2>Any other steel is the seed.</h2>
+    <p class="lead">
+      A punched plate of twelve words, a capsule of letter tiles, a laminated card in a safe: whoever finds it has the
+      wallet, at once, with no way back. <strong>A SPLITSTEEL plate is a random number.</strong> Found, photographed,
+      copied a hundred times, it says nothing about the seed until it meets its other half, and it only has one.
+    </p>
+    <div class="why-wrap">
+      <table class="why">
+        <thead>
+          <tr><th>If the backup is…</th><th>and someone finds one hiding place</th><th>getting the money back needs</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>twelve words on paper or steel</td><td>they have everything</td><td>any wallet</td></tr>
+          <tr><td>words plus a passphrase</td><td>they have everything but a guess: the passphrase is all that stands, and it is in one head</td><td>any wallet, and the passphrase remembered</td></tr>
+          <tr><td>multisig, with keys held by others</td><td>nothing from one key; but enough holders together can spend without you, and enough can refuse to sign</td><td>the right software, the wallet descriptor, and enough of the keys</td></tr>
+          <tr><td>Shamir shares</td><td>nothing below the threshold</td><td>software that speaks the scheme</td></tr>
+          <tr><td class="strong">SPLITSTEEL</td><td class="strong">nothing: a half is a random number, and copies of the same half never add up</td><td class="strong">a printed table and a pencil, or the kit</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="hint">Both halves are needed, so each is kept in more than one place: two halves, three copies each. That is the whole
+      of the trade. Nobody a half is given to can spend it, alone or together, which is what a split has that a multisig
+      does not.</p>
+  </div>
+</section>
+
+<!-- ============================================================ 6 · heirs -->
+<section class="qs rev" id="heirs">
+  <div class="wrap">
+    <p class="kicker">06 · the bad day</p>
+    <h2>For the person who inherits this.</h2>
+    <p class="lead">
+      The wizard has a help screen written for you, and the recovery is two grids typed from two objects.
+      <strong>The words it gives you are the money.</strong> Nothing about this is urgent, whatever anyone says.
+    </p>
+    <ol class="qs-steps">
+      <li><strong>Read the help screens first.</strong> Choose <span class="mono">[?]</span> at the menu. They are short, and they
+        are the difference between keeping the money and losing it. <a href="#help">Watch them here.</a></li>
+      <li><strong>Gather one pad object and one ciphertext object.</strong> A <span class="pad">red</span> stick or disc and a
+        <span class="cipher">blue</span> one, or two plates. The plates carry no mark, and it does not matter which goes first.</li>
+      <li><strong>Sit at the kit, in a private room,</strong> with no phone and nobody helping who wants to take the words away.
+        Choose <span class="mono">[2] recover</span> and type each half box by box; the check box catches a misread character.
+        <a href="#recover">Watch the recovery.</a></li>
+      <li><strong>Write the words on paper</strong> when the screen shows them, before pressing enter.</li>
+      <li><strong>Put them into a hardware wallet bought new</strong>, never a website, never a phone or PC that browses the web.
+        Confirm the balance, then move everything to a wallet that is yours.</li>
+      <li><strong>Burn the scrap, wipe the SD card,</strong> and put the two objects back in different buildings until the
+        old wallet is empty.</li>
+    </ol>
+    <p class="hint">Real help never needs your words. If anyone offering support asks for them, they are a thief. Walk away.</p>
+
+      </div>
+</section>
+
+<footer class="footer">
+  <p class="wordmark">SPLIT<span>STEEL</span></p>
+  <p class="mono foot-line">the Pi is a blender · steel is the vault · never type a seed into a website</p>
+  <p class="foot-small">
+    A demonstration, not financial advice, and not a substitute for independent review before anyone
+    trusts a backup scheme with life-changing money. The seed in the replay is a published demonstration value.
+    Nothing on this page asks for a seed; nothing ever should.
+  </p>
+</footer>
+
+<script type="module" src="quickstart.js"></script>
+</body>
+</html>

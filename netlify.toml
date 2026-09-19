@@ -1,0 +1,3 @@
+# SPLITSTEEL demo — plain static site, no build step. Headers live in _headers.
+[build]
+  publish = "."
