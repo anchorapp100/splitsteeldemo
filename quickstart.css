@@ -18,7 +18,7 @@
 .qs .lead strong { color: var(--fg); }
 .qs-hero .hero-inner { padding-top: 7.5rem; }
 .qs-hero h1 { max-width: 20ch; }
-.qs-stamp { display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 1.4rem; padding: 0.45rem 0.8rem;
+.qs-stamp { display: inline-block; line-height: 1.5; margin-top: 1.4rem; padding: 0.45rem 0.8rem;
   border: 1px solid var(--line); border-radius: 6px; font-size: 0.8rem; color: var(--muted); }
 .qs-stamp b { color: var(--ok); font-weight: 500; }
 
