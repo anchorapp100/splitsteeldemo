@@ -96,7 +96,7 @@
           <li><strong>Two casino dice</strong>, two colours, so first and second stay distinct</li>
           <li><strong>Two USB sticks</strong>, any size; they become <span class="pad">R</span> and <span class="cipher">B</span></li>
           <li><strong>The three printed cards</strong>: dice card, ARITHMETIC CARD, SEED GRID CARD
-            (pages 11 and 12 of the field manual, or in the box)</li>
+            (pages 11 to 13 of the field manual, or in the box)</li>
           <li>Pencil and paper</li>
         </ul>
       </div>
@@ -275,8 +275,9 @@
             <li><a href="video/quickstart-04-checks.mp4">04 · The checks</a></li>
             <li><a href="video/quickstart-05-sticks.mp4">05 · The sticks</a></li>
             <li><a href="video/quickstart-06-power-off.mp4">06 · Power off</a></li>
-            <li><a href="video/quickstart-07-recover.mp4">07 · Recover</a></li>
-            <li><a href="video/quickstart-08-help.mp4">08 · Help for heirs</a></li>
+            <li><a href="video/quickstart-07-three-parts.mp4">07 · Three parts, any two</a></li>
+            <li><a href="video/quickstart-08-recover.mp4">08 · Recover</a></li>
+            <li><a href="video/quickstart-09-help.mp4">09 · Help for heirs</a></li>
           </ul>
         </details>
       </div>
@@ -375,10 +376,45 @@
   </div>
 </section>
 
-<!-- ============================================================ 4 · inheritance -->
+<!-- ============================================================ 4 · two halves, or three parts -->
+<section class="qs rev" id="parts">
+  <div class="wrap">
+    <p class="kicker">04 · two halves, or three parts</p>
+    <h2>Both needed, or any two of three.</h2>
+    <p class="lead">
+      The wizard asks one question before a die is rolled. Two halves is the simplest thing and the most private:
+      copies of one half can go anywhere, and nobody you hand one to can ever combine with anyone.
+      <strong>Three parts buys loss tolerance with maths instead of copies:</strong> numbers 1 and 2 come from you,
+      number 3 is the seed combined with both, and each part carries two of the three. RED holds 1 and 2, BLUE 2 and 3,
+      GREEN 3 and 1. One part alone is two random numbers. Any two parts hold all three, and recover on the same printed table.
+      Episode 07 in the replay is the same wallet made as three parts.
+    </p>
+    <div class="why-wrap">
+      <table class="why">
+        <thead>
+          <tr><th></th><th>two halves, both needed</th><th>three parts, any two recover</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>a thief finds one hiding place</td><td>nothing</td><td>nothing</td></tr>
+          <tr><td>you lose one object outright</td><td>everything, unless you made copies</td><td>nothing: the other two recover it</td></tr>
+          <tr><td>objects for one-loss tolerance</td><td>four, two copies of each half</td><td>three</td></tr>
+          <tr><td>characters an object, twelve words</td><td>32 and a check group</td><td>64 and two check groups, so two plates a part</td></tr>
+          <tr><td>lookups to recover by hand</td><td>32</td><td>64, in two passes</td></tr>
+          <tr><td>can the people you give pieces to combine without you</td><td>never: copies of one half never add up</td><td>any two holders can: choose them like cosigners, or keep two parts yourself in two buildings</td></tr>
+          <tr><td>the rule for hiding places</td><td>no place holds both halves</td><td>no place holds two different parts</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="hint">Neither is the wrong answer, which is why the wizard asks. Two halves if you will make and place copies
+      properly and you value that nobody else can ever assemble it. Three parts if losing a place worries you more than
+      two holders conspiring, or you want three people to each hold something and any two to suffice.</p>
+  </div>
+</section>
+
+<!-- ============================================================ 5 · inheritance -->
 <section class="qs rev" id="inherit">
   <div class="wrap">
-    <p class="kicker">04 · inheritance</p>
+    <p class="kicker">05 · inheritance</p>
     <h2>Split the secret, not the trust.</h2>
     <p class="lead">
       Copies of the same half never add up. Twenty people holding twenty copies of the ciphertext hold nothing
@@ -406,7 +442,9 @@
       <div class="qs-card">
         <h3>The after-death path takes two</h3>
         <p>The will names where the pad is, and the person who holds the will holds no cipher. A cipher sits with
-          someone who does not know where the pad is. Either alone has nothing. Together, after you, they recover it.</p>
+          someone who does not know where the pad is. Either alone has nothing. Together, after you, they recover it.
+          With three parts the shape is simpler: one part each to three people or places, and any two of them recover,
+          which is also why those holders are chosen like cosigners.</p>
       </div>
     </div>
 
@@ -460,7 +498,7 @@
 <!-- ============================================================ 5 · why a split -->
 <section class="qs rev" id="why">
   <div class="wrap">
-    <p class="kicker">05 · why a split</p>
+    <p class="kicker">06 · why a split</p>
     <h2>Any other steel is the seed.</h2>
     <p class="lead">
       A punched plate of twelve words, a capsule of letter tiles, a laminated card in a safe: whoever finds it has the
@@ -477,7 +515,7 @@
           <tr><td>words plus a passphrase</td><td>they have everything but a guess: the passphrase is all that stands, and it is in one head</td><td>any wallet, and the passphrase remembered</td></tr>
           <tr><td>multisig, with keys held by others</td><td>nothing from one key; but enough holders together can spend without you, and enough can refuse to sign</td><td>the right software, the wallet descriptor, and enough of the keys</td></tr>
           <tr><td>Shamir shares</td><td>nothing below the threshold</td><td>software that speaks the scheme</td></tr>
-          <tr><td class="strong">SPLITSTEEL</td><td class="strong">nothing: a half is a random number, and copies of the same half never add up</td><td class="strong">a printed table and a pencil, or the kit</td></tr>
+          <tr><td class="strong">SPLITSTEEL, two halves or three parts</td><td class="strong">nothing: a half or a part is random numbers, and copies of the same one never add up</td><td class="strong">a printed table and a pencil, or the kit</td></tr>
         </tbody>
       </table>
     </div>
@@ -490,7 +528,7 @@
 <!-- ============================================================ 6 · heirs -->
 <section class="qs rev" id="heirs">
   <div class="wrap">
-    <p class="kicker">06 · the bad day</p>
+    <p class="kicker">07 · the bad day</p>
     <h2>For the person who inherits this.</h2>
     <p class="lead">
       The wizard has a help screen written for you, and the recovery is two grids typed from two objects.
@@ -499,8 +537,10 @@
     <ol class="qs-steps">
       <li><strong>Read the help screens first.</strong> Choose <span class="mono">[?]</span> at the menu. They are short, and they
         are the difference between keeping the money and losing it. <a href="#help">Watch them here.</a></li>
-      <li><strong>Gather one pad object and one ciphertext object.</strong> A <span class="pad">red</span> stick or disc and a
-        <span class="cipher">blue</span> one, or two plates. The plates carry no mark, and it does not matter which goes first.</li>
+      <li><strong>Gather one pad object and one ciphertext object,</strong> a <span class="pad">red</span> stick or disc and a
+        <span class="cipher">blue</span> one, or two plates, or for a three-parts backup any two of the
+        <span class="pad">red</span>, <span class="cipher">blue</span> and <span class="ok">green</span> parts. Plates carry no
+        mark, and it does not matter which goes first.</li>
       <li><strong>Sit at the kit, in a private room,</strong> with no phone and nobody helping who wants to take the words away.
         Choose <span class="mono">[2] recover</span> and type each half box by box; the check box catches a misread character.
         <a href="#recover">Watch the recovery.</a></li>

@@ -79,6 +79,7 @@ const TABS = [
   ["dice", "Dice card"],
   ["xor", "Arithmetic card"],
   ["paper", "Your paper"],
+  ["numbers", "Three numbers"],
   ["words", "The words"],
 ];
 
@@ -181,6 +182,14 @@ function boxRow(k) {
     add("C" + (k.cur + 1), k.c, k.cur, "pg-seed-box", k.wrong && k.wrong.includes(k.cur) ? " bad" : "");
     return row;
   }
+  if (k.ncur !== undefined && k.n1 && k.n2 && k.n3 && k.x) {
+    add("1", k.n1, k.ncur, "pg-in-box");
+    row.appendChild(el("span", "box-op", "·"));
+    add("2", k.n2, k.ncur, "pg-in-box");
+    row.appendChild(el("span", "box-op", "·"));
+    add("3", k.n3, k.ncur, "pg-seed-box");
+    return row;
+  }
   if (k.pcur !== undefined && k.ccur !== undefined && k.pad && k.cip) {
     add("pad " + (k.pcur + 1), k.pad, k.pcur, "pg-pad-box");
     row.appendChild(el("span", "box-op", "·"));
@@ -237,6 +246,17 @@ function renderPaper(k) {
   return f;
 }
 
+function renderNumbers(k) {
+  const f = document.createDocumentFragment();
+  f.appendChild(el("p", "card-title", "THREE PARTS  ·  the three numbers on your paper"));
+  const opts = (n) => ({ cur: k.nwhich === n ? k.ncur : undefined, fill: k.nwhich === n && (k["n" + n] || "").length < 32 ? k.ncur : undefined });
+  f.appendChild(grid("NUMBER 1  ·  your dice", k.n1 || "", "pg-in", opts(1)));
+  f.appendChild(grid("NUMBER 2  ·  rolled at the table", k.n2 || "", "pg-in", opts(2)));
+  f.appendChild(grid("NUMBER 3  ·  the seed combined with 1 and 2", k.n3 || "", "pg-seed", opts(3)));
+  f.appendChild(el("p", "card-read", "RED = 1 and 2 · BLUE = 2 and 3 · GREEN = 3 and 1 · any two parts hold all three"));
+  return f;
+}
+
 function renderWords(k) {
   const f = document.createDocumentFragment();
   f.appendChild(el("p", "card-title", "THE PAPER SEED  ·  twelve words, in order"));
@@ -252,13 +272,14 @@ function renderWords(k) {
   return f;
 }
 
-const RENDER = { seed: renderSeedCard, dice: renderDiceCard, xor: renderXorCard, paper: renderPaper, words: renderWords };
+const RENDER = { seed: renderSeedCard, dice: renderDiceCard, xor: renderXorCard, paper: renderPaper, numbers: renderNumbers, words: renderWords };
 
 function hasContent(tab, k) {
   if (tab === "seed") return !!(k.a || k.b || k.c);
   if (tab === "dice") return !!k.dice;
   if (tab === "xor") return !!(k.x && k.x.length);
   if (tab === "paper") return !!(k.pad || k.cip);
+  if (tab === "numbers") return !!(k.n1 || k.n2 || k.n3);
   if (tab === "words") return !!k.w;
   return false;
 }
@@ -277,7 +298,7 @@ function renderCards() {
   const prev = st.step > 0 ? (ep.steps[st.step - 1].k || {}) : (st.ep > 0 ? lastK(demo.episodes[st.ep - 1]) : {});
   const done = st.typed >= (s.keys || "").length;
   const k = done ? { ...cur } : { ...prev };
-  for (const h of ["cur", "bcur", "pcur", "ccur", "wcur", "x", "dice", "wrong"]) {
+  for (const h of ["cur", "bcur", "pcur", "ccur", "wcur", "ncur", "nwhich", "x", "dice", "wrong"]) {
     if (cur[h] !== undefined) k[h] = cur[h]; else if (!done) delete k[h];
   }
   if (done && cur.wrong === undefined) delete k.wrong;
