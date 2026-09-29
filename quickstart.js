@@ -4,6 +4,11 @@
    and every card state follows the values that sitting really used.
    Nothing on this page talks to a network. */
 
+/* the reveal hides content until a script shows it, so the script says so:
+   with JavaScript off the page reads as written (the <noscript><style> that
+   used to do this is forbidden by the site's own CSP and never applied) */
+document.documentElement.classList.add("js");
+
 import demo from "./demo.js";
 
 const $ = (s, r = document) => r.querySelector(s);

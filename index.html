@@ -17,7 +17,8 @@
 <link rel="preload" href="fonts/BoxDrawing.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="quickstart.css">
-<noscript><style>.rev{opacity:1 !important;transform:none !important}</style></noscript>
+<!-- no <noscript><style> here: the site's CSP allows no inline style, so it never
+     applied. Nothing hides without JavaScript now - see .rev in styles.css. -->
 </head>
 <body>
 
@@ -426,8 +427,11 @@
     <div class="qs-grid">
       <div class="qs-card">
         <h3>Many <span class="cipher">ciphers</span></h3>
-        <p>Spread the ciphertext as widely as is useful: a solicitor, a family member, a hole in the garden, even a
-          dead man's switch in an online account. A hacked account learns a random string and nothing else.</p>
+        <p>Spread the ciphertext as widely as is useful: a solicitor, a family member, a hole in the garden. A
+          copy in an online account is defensible on the arithmetic - a hacked account learns a random string and
+          nothing else - but only if nothing beside it hints where a pad is, and only if you accept that an online
+          copy is one a future dispute, subpoena or breach also reaches. Metal and paper in two places is the
+          stronger habit; if you do put one online, it carries no label, no note and no name.</p>
       </div>
       <div class="qs-card">
         <h3>Few <span class="pad">pads</span></h3>
@@ -441,10 +445,17 @@
       </div>
       <div class="qs-card">
         <h3>The after-death path takes two</h3>
-        <p>The will names where the pad is, and the person who holds the will holds no cipher. A cipher sits with
-          someone who does not know where the pad is. Either alone has nothing. Together, after you, they recover it.
-          With three parts the shape is simpler: one part each to three people or places, and any two of them recover,
-          which is also why those holders are chosen like cosigners.</p>
+        <p><strong>Not in the will itself.</strong> A will usually becomes a public record once probate is
+          granted - in England and Wales anyone can order a copy - so whereabouts written into it are published
+          after your death. Put them in a <em>sealed letter of wishes</em> lodged with the will instead: it is not
+          part of the will, it is not published, and it can be replaced whenever a hiding place changes. The letter
+          says where the pad is; the person who holds it holds no cipher. A cipher sits with someone who does not
+          know where the pad is. Either alone has nothing. Together, after you, they recover it. With three parts
+          the shape is simpler: one part each to three people or places, and any two of them recover, which is also
+          why those holders are chosen like cosigners.</p>
+        <p class="qs-note">Wills, probate and how a letter of wishes is treated differ by country and change over
+          time. This is a description of the design, not legal advice - take a solicitor's before you rely on
+          it.</p>
       </div>
     </div>
 

@@ -221,3 +221,8 @@
 .why td:first-child { color: var(--fg); }
 .why td.strong { color: var(--fg); background: var(--bg-2); }
 .why tbody tr:last-child td { border-bottom: 0; }
+
+/* a caution under a card: quieter than the card's own text, never a footnote
+   nobody reads. Used where the advice touches law, which changes and differs */
+.qs-note { margin-top: .7rem; font-size: .82rem; line-height: 1.5; color: var(--muted);
+           border-top: 1px solid var(--line); padding-top: .6rem; }

@@ -75,12 +75,18 @@ h3 { font-size: 1.3rem; font-weight: 500; letter-spacing: -0.012em; }
 main > section, section.wrap { margin-top: clamp(6rem, 12vh, 9.5rem); }
 main > section:first-child { margin-top: 4rem; }
 
-/* reveal on scroll */
-.rev { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.rev.in { opacity: 1; transform: none; }
+/* Reveal on scroll - only where a script is running to undo it.
+   The class is added by landing.js, so a visitor with JavaScript off (or a
+   blocked script, or a reader) gets the page as written instead of a blank
+   one. This used to hang off a <noscript><style> block, which the site's own
+   Content-Security-Policy forbids - style-src 'self' - so it never applied
+   and those visitors saw nothing at all. */
+html.js .rev { opacity: 0; transform: translateY(22px);
+               transition: opacity 0.7s ease, transform 0.7s ease; }
+html.js .rev.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .rev { opacity: 1; transform: none; transition: none; }
+  html.js .rev { opacity: 1; transform: none; transition: none; }
 }
 
 /* ---------- nav ---------- */
